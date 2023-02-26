@@ -11,4 +11,3 @@ services:
     environment:
       NODE_ENV: development
       DEBUG: nodejs-docker-express:*
-      APPLICATIONINSIGHTS_CONNECTION_STRING: ${APPLICATIONINSIGHTS_CONNECTION_STRING}

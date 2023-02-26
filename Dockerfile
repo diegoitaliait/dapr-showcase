@@ -1,4 +1,4 @@
-FROM node:16.13.2-alpine as builder
+FROM node:16-alpine as builder
 WORKDIR /app
 COPY src/package*.json ./
 COPY src ./
@@ -6,7 +6,7 @@ RUN  npm ci
 
 #------------------------------------
 
-FROM node:16.13.2-alpine
+FROM node:16-alpine
 WORKDIR /app
 COPY src/package*.json ./
 RUN npm install --production

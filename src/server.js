@@ -11,12 +11,12 @@ const availabilityRouter = require("./routes/availability");
 const statusRouter = require("./routes/status");
 
 app.get("/", (req, res) => {
-  console.log("Here");
-  res.json({ message: "Hi" });
+  console.log("home_root");
+  res.json({ message: "Hi from HOME" });
 
 });
 
-app.use("/availability", availabilityRouter);
+// app.use("/availability", availabilityRouter);
 app.use("/status", statusRouter);
 
 app.listen(PORT, HOST, () => {
